@@ -6,8 +6,11 @@
     <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag 'style' %>
+    <%= javascript_include_tag 'application' %>
   </head>
   <body>
+    <div id="test">
+    </div>
     
     <div id="main" role="main">
       <%= yield %>
