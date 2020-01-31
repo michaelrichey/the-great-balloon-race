@@ -7,3 +7,5 @@ gem "middleman-blog", "~> 3.6.0.beta.2"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+
+ruby '2.5.4'
